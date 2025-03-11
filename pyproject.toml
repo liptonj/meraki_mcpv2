@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meraki-mcp"
+version = "0.1.0"
+authors = [
+    {name = "Josh Lipton", email = "Josh.Lipton@outlook.com"},
+]
+description = "Model Context Protocol server for Cisco Meraki Networks API"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp", 
+    "fastapi",
+    "uvicorn",
+    "pydantic>=2.0.0",
+    "python-dotenv",
+    "meraki"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/liptonj/meraki_mcp"
+"Bug Tracker" = "https://github.com/liptonj/meraki_mcp/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88

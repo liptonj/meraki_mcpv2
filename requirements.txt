@@ -1,0 +1,21 @@
+meraki>=1.30.0
+fastapi>=0.95.0
+uvicorn>=0.22.0
+pydantic>=2.0.0
+python-jose>=3.3.0
+python-dotenv>=1.0.0
+sse-starlette>=1.6.5
+asyncio>=3.4.3
+redis>=4.5.5
+httpx>=0.24.0
+# NLP libraries (optional, will use fallback if not installed)
+# NOTE: Do not uncomment unless you're on Python < 3.13
+# spacy>=3.5.0
+# Alternative NLP libraries with better Python 3.13 compatibility
+nltk>=3.9.1
+numpy>=2.2.0  # Required for NLTK's advanced NLP features
+pytest>=7.3.1
+black>=23.3.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.3.0
