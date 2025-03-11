@@ -264,7 +264,6 @@ eventSource.addEventListener('network_alert', (event) => {
 GET /mcp/stream HTTP/1.1
 Host: localhost:8000
 Accept: text/event-stream
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 Cache-Control: no-cache
 ```
 
