@@ -106,7 +106,6 @@ meraki_mcpv2/
 
    ```plaintext
    MERAKI_API_KEY=your_meraki_api_key
-   PROVIDER_API_KEY=your_provider_api_key
    ```
 
 ## Usage
@@ -117,34 +116,8 @@ meraki_mcpv2/
 uvicorn src.meraki_mcp.main:app --reload
 ```
 
-The server will be available at <http://localhost:8000>.
+The server will be available at <http://localhost:8000/sse>.
 
-### Example Request
-
-```json
-{
-  "query": "What's the current status of the San Francisco office network?",
-  "query_type": "network_status",
-  "parameters": {
-    "network_id": "N_123456789",
-    "timeframe": "24h",
-    "include_devices": true
-  },
-  "user": {
-    "id": "user_123",
-    "metadata": {
-      "role": "network_admin",
-      "permissions": ["read_all", "configure_networks"]
-    }
-  },
-  "options": {
-    "max_tokens": 1000,
-    "include_raw_data": false,
-    "stream": true,
-    "update_frequency": "realtime"
-  }
-}
-```
 
 ## Server-Sent Events (SSE) Implementation
 
