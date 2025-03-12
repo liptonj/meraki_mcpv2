@@ -14,8 +14,12 @@ httpx>=0.24.0
 # Alternative NLP libraries with better Python 3.13 compatibility
 nltk>=3.9.1
 numpy>=2.2.0  # Required for NLTK's advanced NLP features
+# UI libraries
+streamlit>=1.32.0
+# Testing and code quality
 pytest>=7.3.1
 black>=23.3.0
 isort>=5.12.0
 flake8>=6.0.0
 mypy>=1.3.0
+mcp>=1.3.0
